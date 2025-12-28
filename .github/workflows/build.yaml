@@ -91,7 +91,7 @@ jobs:
       - name: Determine Container Tag and Build Necessity
         id: set_container_tag
         run: |
-          build_needed=false
+          build_needed=true
           tag="${{ github.ref_name }}"
 
           # Set tag based on base branch (use base branch for the release or pull request)
